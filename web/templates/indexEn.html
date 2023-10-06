@@ -1,0 +1,42 @@
+{{define "indexEn"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="doCenter">
+        <form  action="/">
+            <button class="buttonLanguage buttonAfter">Ru</button>
+        </form>
+        <form action="/createEn">
+            <button class="button buttonAfter">Add your quote</button>
+        </form>
+    </div>
+    <p class="head">A little important</p>
+    <div class="struct">
+    {{range .}}
+        <div class="quote">
+            <div class="quoteSpace">
+                <div class="bordering">
+                    {{.Author}}
+                </div>
+                <div class="bordering">
+                    "{{.Name}}"
+                </div>
+            </div>
+            <div class="textQuote">
+                {{.Quote}}
+            </div>
+        </div>
+    {{else}}
+    <p >No quotes</p>
+    {{end}}
+    </div>
+</body>
+</html>
+
+{{end}}

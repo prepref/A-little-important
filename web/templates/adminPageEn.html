@@ -1,0 +1,49 @@
+{{define "adminEn"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="doCenter">
+        <form action="/createEn">
+            <button class="button buttonAfter buttonBottom">Add your quote</button>
+        </form>
+        <form action="/en">
+            <button class="buttonAdmin buttonAfter">Go back to main page</button>
+        </form>
+        <form action="/deleteEn" method="post">
+            <input type="text" name="login" placeholder="login" class="inbox inboxTop"/><br>
+            <input type="text" name="password" placeholder="password" class="inbox"/><br>
+            <input type="text" name="author" placeholder="Author" class="inbox"/><br>
+            <input type="text" name="quote" placeholder="Quote" class="inbox"/><br>
+            <button class="buttonDelete buttonAfter">Delete</button>
+        </form>
+    </div>
+    <p class="head">A little important</p>
+    <div class="struct">
+    {{range .}}
+        <div class="quote">
+            <div class="quoteSpace">
+                <div class="bordering">
+                    {{.Author}}
+                </div>
+                <div class="bordering">
+                    "{{.Name}}"
+                </div>
+            </div>
+            <div class="textQuote">
+                {{.Quote}}
+            </div>
+        </div>
+    {{else}}
+    <p >No quotes</p>
+    {{end}}
+    </div>
+</body>
+</html>
+
+{{end}}

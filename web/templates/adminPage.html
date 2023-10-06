@@ -1,0 +1,49 @@
+{{define "admin"}}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница Админа</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="doCenter">
+        <form action="/create">
+            <button class="button buttonAfter buttonBottom">Добавьте свою цитату</button>
+        </form>
+        <form action="/">
+            <button class="buttonAdmin buttonAfter">Вернуться на главную страницу</button>
+        </form>
+        <form action="/delete" method="post">
+            <input type="text" name="login" placeholder="Логин" class="inbox inboxTop"/><br>
+            <input type="text" name="password" placeholder="Пароль" class="inbox"/><br>
+            <input type="text" name="author" placeholder="Автор" class="inbox"/><br>
+            <input type="text" name="quote" placeholder="Цитата" class="inbox"/><br>
+            <button class="buttonDelete buttonAfter">Удалить</button>
+        </form>
+    </div>
+    <p class="head">Немного важного</p>
+    <div class="struct">
+    {{range .}}
+        <div class="quote">
+            <div class="quoteSpace">
+                <div class="bordering">
+                    {{.Author}}
+                </div>
+                <div class="bordering">
+                    "{{.Name}}"
+                </div>
+            </div>
+            <div class="textQuote">
+                {{.Quote}}
+            </div>
+        </div>
+    {{else}}
+    <p >Цитат нет</p>
+    {{end}}
+    </div>
+</body>
+</html>
+
+{{end}}

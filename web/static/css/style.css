@@ -1,0 +1,228 @@
+.head{
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch:normal;
+    text-align:center;
+    font-size: 100px;
+    margin-top: 1px;
+    margin-bottom: 50px;
+}
+
+.button{
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch: normal;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    width: 400px;
+    height: 50px;
+    background-color: rgb(201, 194, 184);
+    border-style: none;
+}
+
+.buttonAdmin{
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch: normal;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 50px;
+    width: 400px;
+    height: 100px;
+    background-color: rgb(201, 194, 184);
+    border-style: none;
+}
+
+.buttonBottom{
+    margin-bottom: 2px;
+}
+
+.buttonDelete{
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch: normal;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(201, 194, 184);
+    border-style: none;
+    color: rgb(161, 73, 78);
+}
+
+.buttonAfter:hover{
+    outline: 2px solid black;
+    outline-offset: 0;
+}
+
+.buttonCreate{
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch: normal;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(201, 194, 184);
+    border-style: none;
+}
+
+.buttonBack{
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch: normal;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(201, 194, 184);
+    border-style: none;
+}
+
+.doCenter{
+    text-align:center;
+    margin-top: 10px;
+}
+
+.struct{
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch: normal;
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(201, 194, 184);
+    margin-bottom: 100px;
+}
+
+.inbox{
+    width: 600px;
+    height: 50px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    border-style: none;
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch: normal;
+}
+
+.inboxTop{
+    margin-top: 7px;
+}
+
+.text{
+    width: 600px;
+    height: 150px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    border-style: none;
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch: normal;
+    resize: none;
+}
+
+.topOnCreate{
+    margin-top: 170px;
+    margin-bottom: 5px;
+}
+
+.buttonLanguage{
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch: normal;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(201, 194, 184);
+    border-style: none;
+}
+
+.formInlineBlock{
+    display: inline-block;
+}
+
+::placeholder{
+    font-size: 30px;
+}
+
+input{
+    font-size: 30px;
+    background-color: rgb(201, 194, 184);
+    outline: solid 2px black;
+}
+
+textarea{
+    font-size: 30px;
+    background-color: rgb(201, 194, 184);
+    outline: solid 2px black;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+
+.inscriptions{
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch: normal;
+    font-size: 50px;
+    margin-top: 300px;
+}
+
+.buttonBackMainPage{
+    font-family: monospace;
+    font-style: oblique;
+    font-stretch: normal;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 50px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(201, 194, 184);
+    border-style: none;
+}
+
+.quote{
+    margin-bottom: 20px;
+}
+
+.quoteSpace{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.bordering{
+    outline: solid 2px black;
+    outline-offset: 5px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.textQuote{
+    margin-top: 15px;
+    word-wrap: break-word;
+    outline: none;
+}
